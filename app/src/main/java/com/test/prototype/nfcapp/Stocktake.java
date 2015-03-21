@@ -26,15 +26,6 @@ public class Stocktake extends Activity{
     HashMap<String, Item> dbItems = new HashMap<String, Item>();
     ArrayList<String> scannedItems = new ArrayList<String>();
 
-
-    // what was out of date?
-    //that warning down the bottom ok
-    //does the program run?
-    //yup
-    //hmm hold on ill try to find on google
-    //ok, i'll keep trying over here
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,13 +40,9 @@ public class Stocktake extends Activity{
     //manual entry of an item's id
     public void buttonOnClickStocktakeManuallyEnterItem(View v){
         itemID = "";
-        TextView newItem = new TextView(getApplicationContext());
 
-        //opens dialog intent "manual entry"
         Intent startManualEntry = new Intent("android.intent.action.MANUALENTRY");
         startActivityForResult(startManualEntry, 0);
-
-        //newItem.setText("Manually entered item, ID: " + itemID);
 
     }
 
