@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Scan Item"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="183dp"
+        android:id="@+id/lvBorrowScannedItems"
+        android:layout_gravity="center_horizontal"
+        android:choiceMode="singleChoice" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I totally just scanned an item"
+        android:id="@+id/bBorrowScan"
+        android:layout_gravity="center_horizontal"
+        android:onClick="buttonOnClickScanItem" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manually Enter ID"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:onClick="buttonOnClickStocktakeFinishStocktake" />
+</LinearLayout>
